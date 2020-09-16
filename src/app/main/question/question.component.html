@@ -1,0 +1,19 @@
+<div class="card w-75" *ngFor="let q of ques;let i = index;">
+  <div class="card-body">
+    <p class="card-text">{{i+1}} . {{ q.q }}</p>
+    <form>
+      <div *ngFor="let choice of q.choices">
+      <input type="radio" id="choice" name="choice" (click)="onSelect(choice, i)" value="choice">
+      <label for="choice"> {{choice}} </label><br>
+    </div>
+    </form>
+  </div> 
+</div>
+  
+ 
+     
+
+    
+
+    
+
